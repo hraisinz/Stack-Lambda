@@ -1,4 +1,6 @@
-package org.raisinz.model;
+package org.raisinz.service;
+
+import org.raisinz.model.Queue;
 
 public class QueueClient {
 

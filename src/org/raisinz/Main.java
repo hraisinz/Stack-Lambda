@@ -2,7 +2,7 @@ package org.raisinz;
 
 import org.raisinz.model.Linkedlist;
 import org.raisinz.model.Queue;
-import org.raisinz.model.QueueClient;
+import org.raisinz.service.QueueClient;
 import org.raisinz.model.Stack;
 import org.raisinz.service.Stackclient;
 
