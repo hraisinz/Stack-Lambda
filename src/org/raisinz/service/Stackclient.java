@@ -11,6 +11,7 @@ public class Stackclient {
         stack.push(40);
         System.out.println("popped data : "+stack.pop((e)->{return e;}));
         System.out.println("popped data : "+stack.pop((e)->{return e;}));
+        System.out.println(stack.size());
         stack.getStackData();
     }
 

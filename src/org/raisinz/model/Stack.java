@@ -46,8 +46,14 @@ public class Stack {
     }
 
     public int size(){
-        count=stk.length-sp;
-        return count;
+        if(sp == 0){
+            count=0;
+            return count;
+        }
+        else {
+            count = stk.length - sp;
+            return count;
+        }
     }
 
     public int peek(){

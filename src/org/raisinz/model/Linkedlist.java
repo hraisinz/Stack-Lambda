@@ -46,11 +46,17 @@ public class Linkedlist {
     }
 
     public int size(){
-        Node temp=head;
-        while (temp != null){
-            count++;
-            temp=temp.getNext();
+        if(head == null){
+            count=0;
+            return count;
         }
-        return count;
+        else {
+            Node temp = head;
+            while (temp != null) {
+                count++;
+                temp = temp.getNext();
+            }
+            return count;
+        }
     }
 }
