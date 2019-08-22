@@ -3,11 +3,14 @@ package org.raisinz.model;
 public class Stack {
     private int[] stk;
     private int sp;
-    private final int overflowValue = 0;
-    private final String overflowMessage = "Stack Overflow";
-    private final String underflowMessage = "Stack Underflow";
+    private final int overflowValue;
+    private final String overflowMessage;
+    private final String underflowMessage;
 
     public Stack(int size) {
+        overflowValue=0;
+        overflowMessage = "Stack Overflow";
+        underflowMessage = "Stack Underflow";
         this.stk = new int[size];
         this.sp = size;
     }
