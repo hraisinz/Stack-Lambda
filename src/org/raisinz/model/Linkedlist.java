@@ -1,11 +1,10 @@
 package org.raisinz.model;
-import org.raisinz.model.*;
 
 public class Linkedlist {
-
     private Node head;
     private final int underflowValue;
     private final String underflowMessage;
+    private int count;
 
     public Linkedlist() {
         head=null;
@@ -29,6 +28,7 @@ public class Linkedlist {
     }
 
     public void getLinkedlistData(){
+        System.out.println("Linkedlist Data");
         if(head == null){
             System.out.println(underflowMessage);
         }
@@ -38,5 +38,19 @@ public class Linkedlist {
             System.out.println(temp.getData());
             temp=temp.getNext();
         }
+    }
+
+    public boolean isEmpty(){
+        if(head == null) return true;
+        else return false;
+    }
+
+    public int size(){
+        Node temp=head;
+        while (temp != null){
+            count++;
+            temp=temp.getNext();
+        }
+        return count;
     }
 }

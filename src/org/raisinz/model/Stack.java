@@ -6,6 +6,7 @@ public class Stack {
     private final int overflowValue;
     private final String overflowMessage;
     private final String underflowMessage;
+    private int count;
 
     public Stack(int size) {
         overflowValue=0;
@@ -36,6 +37,21 @@ public class Stack {
         for (int i = sp; i < stk.length; i++) {
             System.out.println(stk[i]);
         }
+    }
+
+    public boolean isEmpty(){
+        if(sp == stk.length) return true;
+        else return false;
+
+    }
+
+    public int size(){
+        count=stk.length-sp;
+        return count;
+    }
+
+    public int peek(){
+        return stk[sp];
     }
 
 }

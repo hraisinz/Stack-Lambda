@@ -8,7 +8,7 @@ public class Stackclient {
         stack.push(10);
         stack.push(20);
         stack.push(30);
-        stack.getStackData();
+        stack.push(40);
         System.out.println("popped data : "+stack.pop((e)->{return e;}));
         System.out.println("popped data : "+stack.pop((e)->{return e;}));
         stack.getStackData();
@@ -23,6 +23,7 @@ public class Stackclient {
         System.out.println("Removed element : "+linkedlist.removeNode(e->e));
         System.out.println("Removed element : "+linkedlist.removeNode(e->e));
         linkedlist.getLinkedlistData();
+
 
     }
 }
