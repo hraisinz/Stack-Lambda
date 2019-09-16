@@ -42,7 +42,6 @@ public class Stack {
     public boolean isEmpty(){
         if(sp == stk.length) return true;
         else return false;
-
     }
 
     public int size(){
